@@ -1,16 +1,18 @@
 /*
-  Upload Data to IoT Server ThingSpeak (https://thingspeak.com/):
-  Support Devices: LoRa Shield + Arduino 
+  Upload Data to Lora Gateway Dragino LG01-P
+  Support Devices: Dragino LoRa Shield + Arduino Uno R3 + Adafruit TPL5110 power breakout (for power saving)
   
-  Example sketch showing how to read Temperature and Humidity from DHT11 sensor,  
-  Then send the value to LoRa Gateway, the LoRa Gateway will send the value to the 
-  IoT server
-
-  It is designed to work with the other sketch dht11_server. 
-
-  modified 24 11 2016
-  by Edwin Chen <support@dragino.com>
-  Dragino Technology Co., Limited
+  Data :
+        * temperature humidity from DHT22 sensor
+        * Lux solar radiation from CJMCU-3001/OPT3001 sensor 
+        * load sensor with HX711 PCB
+        
+  Pin :
+        * lux OPT3001 - SDA A4 - SCL A5
+        * tpl5110 A0 signal to 1 logic level to break out the circuit
+        * led A1 light on one time if gateway LG01-P gets the signal or two time otherwise
+        * DHT22 D5
+        * HX711 PCB scale DOUT D4 - CLK D3
 */
 
 #include <SPI.h>
@@ -31,10 +33,6 @@ unsigned int count = 1;
 
 /** Broche "DATA" du capteur */
 const byte BROCHE_CAPTEUR_DHT = 5;
-
-// broche capteur lux SDA A4 - SCL A5
-// tpl5110 A0
-// led A1
 
 /* Code d'erreur de la fonction readDHT11() et readDHT22() */
 const byte DHT_SUCCESS = 0;        // Pas d'erreur
