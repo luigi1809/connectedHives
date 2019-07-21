@@ -15,6 +15,7 @@
         * HX711 PCB scale DOUT D4 - CLK D3
 */
 
+
 #include <SPI.h>
 #include <RH_RF95.h>
 #include <Wire.h>
@@ -24,7 +25,7 @@
 #define CLK  3
 
 HX711 scale(DOUT, CLK);
-float calibration_factor = -57500;
+float calibration_factor = -44790;
 
 RH_RF95 rf95;
 unsigned int node_id[3] = {0,0,0}; //LoRa End Node ID
@@ -33,6 +34,10 @@ unsigned int count = 1;
 
 /** Broche "DATA" du capteur */
 const byte BROCHE_CAPTEUR_DHT = 5;
+
+// broche capteur lux SDA A4 - SCL A5
+// tpl5110 A0
+// led A1
 
 /* Code d'erreur de la fonction readDHT11() et readDHT22() */
 const byte DHT_SUCCESS = 0;        // Pas d'erreur
@@ -150,7 +155,7 @@ void loop(){
     scale.set_scale(calibration_factor); //Adjust to this calibration factor
     Serial.print("Reading: ");
     float kg;
-    kg=scale.get_units()*2,20462;
+    kg=scale.get_units()*2.20462 - 9.2;
     Serial.print(kg, 1);
     Serial.print(" Kg"); //Change this to kg and re-adjust the calibration factor if you follow SI units like a sane person
     data[9] = kg;//Get humidity Integer Part
