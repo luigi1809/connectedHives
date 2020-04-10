@@ -10,6 +10,8 @@ Documentation
 
 [Dragino LG01-P Gateway setup](https://github.com/luigi1809/connectedHives/blob/master/doc/gateway.md)
 
-[LoRa Scale](https://github.com/luigi1809/connectedHives/blob/master/doc/lora_scale.md)
+[LoRa Scale - electronic setup](https://github.com/luigi1809/connectedHives/blob/master/doc/lora_scale.md)
+
+[LoRa Scale - scale calibration and arduino sketch upload](https://github.com/luigi1809/connectedHives/blob/master/doc/lora_scale.md)
 
 [Send data to cloud](https://github.com/luigi1809/connectedHives/blob/master/doc/cloud.md)
