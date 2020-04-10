@@ -13,8 +13,11 @@ Hive scale:
 * Dragino LoRa Shield for Arduino Uno 868Mhz Europe version [Spec](https://www.dragino.com/products/lora/item/102-lora-shield.html)
 * Adafruit TPL5110 circuit breakout (for power saving)
 * DHT22 temperature and humidity sensor
+
 ![](https://raw.github.com/luigi1809/connectedHives/master/img/dht22.jpg)
 * 200kg electronic platform scale load cell
+
+[[ https://raw.github.com/luigi1809/connectedHives/master/img/load-weight-sensor.jpg \| height=100px]]
 ![](https://raw.github.com/luigi1809/connectedHives/master/img/load-weight-sensor.jpg)
 * 2 x 120pcs 10cm Male to Male + Male to Female and Female to Female Jumper Wire Dupont Cable for Arduino [Shop](https://www.aliexpress.com/item/32829927834.html?spm=a2g0s.9042311.0.0.27426c37Ii2tKg)
 (to be completed)
