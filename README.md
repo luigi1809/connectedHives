@@ -1,11 +1,13 @@
 # connectedHives
 Connected hive scale with our own LoRa Gateway
 
+<img src="https://raw.github.com/luigi1809/connectedHives/master/img/scale.jpg" width="400">
+
 Hardware list
 --------------------
 
 Gateway. The gateway is not LoRaWAN compatible. We will operate on our own LoRa protocol:
-* Dragino LoRa Gateway LG01-P  868Mhz Europe version [Spec](https://www.dragino.com/products/lora-lorawan-gateway/item/117-lg01-p.html) - [Datasheet](https://raw.github.com/luigi1809/connectedHives/master/doc/Datasheet_LG01.pdf) - [Pin mapping](https://raw.github.com/luigi1809/connectedHives/master/img/LoRa_Shield_Pin_Mapping.png)
+* Dragino LoRa Gateway LG01-P  868Mhz Europe version [Spec](https://www.dragino.com/products/lora-lorawan-gateway/item/117-lg01-p.html) - [Datasheet](https://raw.github.com/luigi1809/connectedHives/master/doc/Datasheet_LG01.pdf)
 
 <img src="https://raw.github.com/luigi1809/connectedHives/master/img/gateway.jpg" width="200">
 
@@ -27,7 +29,7 @@ Hive scale:
 
 <img src="https://raw.github.com/luigi1809/connectedHives/master/img/hx711-card.jpg" width="100">
 
-* Adafruit TPL5110 circuit breakout (for power saving)[Doc](https://raw.github.com/luigi1809/connectedHives/master/doc/adafruit-tpl5110-power-timer-breakout.pdf)
+* Adafruit TPL5110 circuit breakout (for power saving) [Doc](https://raw.github.com/luigi1809/connectedHives/master/doc/adafruit-tpl5110-power-timer-breakout.pdf)
 
 <img src="https://raw.github.com/luigi1809/connectedHives/master/img/tpl5110.jpg" width="100">
 
