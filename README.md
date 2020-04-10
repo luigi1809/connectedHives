@@ -5,17 +5,17 @@ Hardware list
 --------------------
 
 Gateway. The gateway is not LoRaWAN compatible. We will operate on our own LoRa protocol:
-* Dragino LoRa Gateway LG01-P  868Mhz Europe version [Spec](https://www.dragino.com/products/lora-lorawan-gateway/item/117-lg01-p.html) [Datasheet](https://www.dragino.com/downloads/downloads/datasheet/EN/Datasheet_LG01.pdf)
-LoRa_Shield_Pin_Mapping.png
+* Dragino LoRa Gateway LG01-P  868Mhz Europe version [Spec](https://www.dragino.com/products/lora-lorawan-gateway/item/117-lg01-p.html) - [Datasheet](https://raw.github.com/luigi1809/connectedHives/master/doc/Datasheet_LG01.pdf) - [Pin mapping](https://raw.github.com/luigi1809/connectedHives/master/img/LoRa_Shield_Pin_Mapping.png)
+
 <img src="https://raw.github.com/luigi1809/connectedHives/master/img/gateway.jpg" width="200">
 
 Hive scale:
-* Arduino Uno R3 [Spec](https://store.arduino.cc/arduino-uno-rev3)
- [Doc](https://www.dragino.com/downloads/downloads/UserManual/LG01_LoRa_Gateway_User_Manual.pdf)
+* Arduino Uno R3 [Spec](https://store.arduino.cc/arduino-uno-rev3) - 
+ [Doc](https://raw.github.com/luigi1809/connectedHives/master/doc/LG01_LoRa_Gateway_User_Manual.pdf)
+ 
  <img src="https://raw.github.com/luigi1809/connectedHives/master/img/arduino.jpg" width="200">
  
-* Dragino LoRa Shield for Arduino Uno 868Mhz Europe version [Spec](https://www.dragino.com/products/lora/item/102-lora-shield.html)
-[Pin Mapping](https://raw.github.com/luigi1809/connectedHives/master/img/LoRa_Shield_Pin_Mapping.png)
+* Dragino LoRa Shield for Arduino Uno 868Mhz Europe version [Spec](https://www.dragino.com/products/lora/item/102-lora-shield.html) - [Pin Mapping](https://raw.github.com/luigi1809/connectedHives/master/img/LoRa_Shield_Pin_Mapping.png)
 
 <img src="https://raw.github.com/luigi1809/connectedHives/master/img/shield.png" width="200">
 
@@ -23,14 +23,13 @@ Hive scale:
 
 <img src="https://raw.github.com/luigi1809/connectedHives/master/img/load-weight-sensor.jpg" width="200">
 
-* HX711 hx711-module-load-cell-voltage-amplifier-1625-63-B.
-
-[Pin Mapping](https://raw.github.com/luigi1809/connectedHives/master/img/hx711.jpg)
+* HX711 load-cell voltage amplifier module [Pin Mapping](https://raw.github.com/luigi1809/connectedHives/master/img/hx711.jpg)
 
 <img src="https://raw.github.com/luigi1809/connectedHives/master/img/hx711-card.jpg" width="100">
 
-* Adafruit TPL5110 circuit breakout (for power saving)
-<img src="https://raw.github.com/luigi1809/connectedHives/master/img/tpl5110.jpg" width="200">
+* Adafruit TPL5110 circuit breakout (for power saving)[Doc](https://raw.github.com/luigi1809/connectedHives/master/doc/adafruit-tpl5110-power-timer-breakout.pdf)
+
+<img src="https://raw.github.com/luigi1809/connectedHives/master/img/tpl5110.jpg" width="100">
 
 * DHT22 temperature and humidity sensor
 
