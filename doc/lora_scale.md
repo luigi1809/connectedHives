@@ -71,5 +71,9 @@ Adafruit TPL5110 <-> Arduino
 * DRV <-> Vin
 * GND <-> GND
 
-Optionaly, we can use a 2.5x5.5x9mm DC power male plug jack :
-<img src="https://raw.github.com/luigi1809/connectedHives/master/img/jack.jpg" width="200">
+Optionaly, we can use a 2.5x5.5x9mm DC power male plug jack.
+In that case, Adafruit TPL5110 <-> Jack
+* DRV <-> middle pin (+)
+* GND <-> outside pin (-)
+
+<img src="https://raw.github.com/luigi1809/connectedHives/master/img/jack.jpg" width="200"><img src="https://raw.github.com/luigi1809/connectedHives/master/img/positive_polarity.jpg" width="200">
