@@ -34,6 +34,22 @@ Hive scale:
     
 <img src="https://raw.github.com/luigi1809/connectedHives/master/img/opt3001.jpg" width="100">
 
-* 2 x 120pcs 10cm Male to Male + Male to Female and Female to Female Jumper Wire Dupont Cable for Arduino [Shop](https://www.aliexpress.com/item/32829927834.html?spm=a2g0s.9042311.0.0.27426c37Ii2tKg)
+* In different sizes, Male to Male, Male to Female and Female to Female Jumper Wire Dupont Cable for Arduino
 
-(to be completed)
+<img src="https://raw.github.com/luigi1809/connectedHives/master/img/dupont.jpg" width="100">
+
+* USB cable Male A to Male B
+
+<img src="https://raw.github.com/luigi1809/connectedHives/master/img/usb.jpg" width="100">
+
+* 4 x AA Alkaline battery Box (4 x 1.5V = 6V) or 5 x AA ni-mh/li-ion rechargeable battery Box (5 x 1.2V = 6V). More than 6 months autonomy with Alkaline.
+
+<img src="https://raw.github.com/luigi1809/connectedHives/master/img/4xAA_box.jpg" width="200"><img src="https://raw.github.com/luigi1809/connectedHives/master/img/5xAA_box.jpg" width="200">
+
+* 4 x AA Alkaline or 5 x AA ni-mh/li-ion rechargeable battery
+
+* 2.5x5.5x9mm DC power male plug jack.
+
+<img src="https://raw.github.com/luigi1809/connectedHives/master/img/jack.jpg" width="200">
+
+* optionaly some resistances

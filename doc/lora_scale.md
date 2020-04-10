@@ -59,7 +59,7 @@ Power supply
 
 <img src="https://raw.github.com/luigi1809/connectedHives/master/img/4xAA_box.jpg" width="300"><img src="https://raw.github.com/luigi1809/connectedHives/master/img/5xAA_box.jpg" width="300">
 
-Battery box connection <-> Adafruit TPL5110
+Battery box connection <-> Adafruit TPL5110 [Doc](https://raw.github.com/luigi1809/connectedHives/master/pdf/adafruit-tpl5110-power-timer-breakout.pdf)
 * red color wire (+) <-> VDD
 * black color wire (-) <-> GND 
 
@@ -79,3 +79,7 @@ In that case, Adafruit TPL5110 <-> Jack
 Then Jack to Arduino
 
 <img src="https://raw.github.com/luigi1809/connectedHives/master/img/jack_arduino.jpg">
+
+Set the breakout timer on TPL5110
+--------------------
+Go to [TPL5110 Doc](https://raw.github.com/luigi1809/connectedHives/master/pdf/adafruit-tpl5110-power-timer-breakout.pdf) section "Notes on the Delay Pin".
