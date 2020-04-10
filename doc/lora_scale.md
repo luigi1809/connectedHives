@@ -77,3 +77,6 @@ In that case, Adafruit TPL5110 <-> Jack
 * GND <-> outside pin (-)
 
 <img src="https://raw.github.com/luigi1809/connectedHives/master/img/jack.jpg" width="200"><img src="https://raw.github.com/luigi1809/connectedHives/master/img/positive_polarity.jpg" width="200">
+
+Then Jack to Arduino
+<img src="https://raw.github.com/luigi1809/connectedHives/master/img/jack_arduino.jpg">
