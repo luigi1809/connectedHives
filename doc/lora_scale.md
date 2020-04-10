@@ -57,11 +57,11 @@ Diagram is indicative. Refer to the load-cell datasheet. Wire colors defer from 
 Power supply
 --------------------
 
-4 x AA Alkaline battery Box (4 x 1.5V = 6V) or 5 x AA Alkaline battery Box (5 x 1.2V = 6V)
+4 x AA Alkaline battery Box (4 x 1.5V = 6V) or 5 x AA ni-mh/li-ion rechargeable battery Box (5 x 1.2V = 6V)
 
 <img src="https://raw.github.com/luigi1809/connectedHives/master/img/4xAA_box.jpg" width="300"><img src="https://raw.github.com/luigi1809/connectedHives/master/img/5xAA_box.jpg" width="300">
 
-Box connection <-> Adafruit TPL5110
+Battery box connection <-> Adafruit TPL5110
 * red color wire (+) <-> VDD
 * black color wire (-) <-> GND 
 
@@ -79,4 +79,5 @@ In that case, Adafruit TPL5110 <-> Jack
 <img src="https://raw.github.com/luigi1809/connectedHives/master/img/jack.jpg" width="200"><img src="https://raw.github.com/luigi1809/connectedHives/master/img/positive_polarity.jpg" width="200">
 
 Then Jack to Arduino
+
 <img src="https://raw.github.com/luigi1809/connectedHives/master/img/jack_arduino.jpg">
