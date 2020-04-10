@@ -207,9 +207,3 @@ void writeVersion()
   fw_version.print(Sketch_Ver);
   fw_version.close();
 }
-
-
-
-
-
-
