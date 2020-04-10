@@ -57,8 +57,19 @@ Diagram is indicative. Refer to the load-cell datasheet. Wire colors defer from 
 Power supply
 --------------------
 
-4 x AA Alkaline battery Box (4 x 1.5V = 6V)
-<img src="https://raw.github.com/luigi1809/connectedHives/master/img/4xAA_box.jpg" width="300">
+4 x AA Alkaline battery Box (4 x 1.5V = 6V) or 5 x AA Alkaline battery Box (5 x 1.2V = 6V)
 
-or 5 x AA Alkaline battery Box (5 x 1.2V = 6V)
-<img src="https://raw.github.com/luigi1809/connectedHives/master/img/5xAA_box.jpg" width="300">
+<img src="https://raw.github.com/luigi1809/connectedHives/master/img/4xAA_box.jpg" width="300"><img src="https://raw.github.com/luigi1809/connectedHives/master/img/5xAA_box.jpg" width="300">
+
+Box connection <-> Adafruit TPL5110
+* red color wire (+) <-> VDD
+* black color wire (-) <-> GND 
+
+<img src="https://raw.github.com/luigi1809/connectedHives/master/img/tpl5110.jpg" width="200">
+
+Adafruit TPL5110 <-> Arduino
+* DRV <-> Vin
+* GND <-> GND
+
+Optionaly, we can use a 2.5x5.5x9mm DC power male plug jack :
+<img src="https://raw.github.com/luigi1809/connectedHives/master/img/jack.jpg" width="200">
