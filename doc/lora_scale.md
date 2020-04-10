@@ -39,9 +39,11 @@ With Dragino LoRa shield, some pins are blocked by shield. Available pin are in 
 <img src="https://raw.github.com/luigi1809/connectedHives/master/img/dht22.jpg" width="200">
 
 * HX711 load-cell voltage amplifier module
-    * DOUT <-> D4
-    * CLK <-> D3
-    
-[Pin Mapping](https://raw.github.com/luigi1809/connectedHives/master/img/hx711.jpg)
+    * DOUT or DT <-> D4
+    * CLK or SCK <-> D3
 
 <img src="https://raw.github.com/luigi1809/connectedHives/master/img/hx711-card.jpg" width="300">
+
+Pin mapping to load-cell
+--------------------
+<img src="https://raw.github.com/luigi1809/connectedHives/master/img/hx711.jpg">
