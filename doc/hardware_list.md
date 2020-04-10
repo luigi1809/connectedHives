@@ -30,6 +30,9 @@ Hive scale:
 
 <img src="https://raw.github.com/luigi1809/connectedHives/master/img/dht22.jpg" width="200">
 
+* lux sensor OPT3001
+    
+<img src="https://raw.github.com/luigi1809/connectedHives/master/img/opt3001.jpg" width="100">
 
 * 2 x 120pcs 10cm Male to Male + Male to Female and Female to Female Jumper Wire Dupont Cable for Arduino [Shop](https://www.aliexpress.com/item/32829927834.html?spm=a2g0s.9042311.0.0.27426c37Ii2tKg)
 
