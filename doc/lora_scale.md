@@ -2,7 +2,7 @@
 
 Code is in ```Arduino/Client-0/Client-0.ino```
 
-Data :
+Data send by the scale / sensor:
 * temperature humidity from DHT22 sensor
 * Lux solar radiation from CJMCU-3001/OPT3001 sensor 
 * load sensor with HX711 PCB
@@ -19,6 +19,9 @@ With Dragino LoRa shield, some pins are blocked by shield. Available pin are in 
 * lux OPT3001
     * SDA <-> A4
     * SCL <-> A5
+    
+<img src="https://raw.github.com/luigi1809/connectedHives/master/img/opt3001.jpg" width="100">
+
 * Adafruit TPL5110
     * A0
     signal to 1 logic level to break out the circuit
