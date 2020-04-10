@@ -14,7 +14,7 @@ Hive scale:
  [Doc](https://www.dragino.com/downloads/downloads/UserManual/LG01_LoRa_Gateway_User_Manual.pdf)
  <img src="https://raw.github.com/luigi1809/connectedHives/master/img/arduino.jpg" width="200">
 * Dragino LoRa Shield for Arduino Uno 868Mhz Europe version [Spec](https://www.dragino.com/products/lora/item/102-lora-shield.html)
-<img src="https://raw.github.com/luigi1809/connectedHives/master/img/shield.jpg" width="200">
+<img src="https://raw.github.com/luigi1809/connectedHives/master/img/shield.png" width="200">
 * Adafruit TPL5110 circuit breakout (for power saving)
 <img src="https://raw.github.com/luigi1809/connectedHives/master/img/tpl5110.jpg" width="200">
 * DHT22 temperature and humidity sensor
