@@ -1,6 +1,4 @@
-# LoRa Scale
-
-Code is in ```Arduino/Client-0/Client-0.ino```
+# LoRa Scale electronics
 
 Data send by the scale / sensor:
 * temperature humidity from DHT22 sensor
