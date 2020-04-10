@@ -5,6 +5,6 @@ Connected hive scale with our own LoRa Gateway
 
 Documentation
 --------------------
-[Hardware list](https://github.com/luigi1809/connectedHives/blob/master/doc/hardware-list.md)
+[Hardware list](https://github.com/luigi1809/connectedHives/blob/master/doc/hardware_list.md)
 [Dragino LG01-P Gateway install](https://github.com/luigi1809/connectedHives/blob/master/doc/gateway.md)
 

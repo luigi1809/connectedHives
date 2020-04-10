@@ -1,4 +1,4 @@
-#Dragino LG01-P Gateway install
+# Dragino LG01-P Gateway install
 
 Plug a network cable between Dragino LAN port and your PC.
 Set up manual network address on your PC to your ethernet card.
