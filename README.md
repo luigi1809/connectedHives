@@ -1,6 +1,7 @@
 # connectedHives
-Connected hive scale with our own LoRa Gateway
-Data are send to thinkview and weatherUnderground
+Connected hive scale with our own LoRa Gateway with 6 months autonomy.
+
+Data are send to [The Things Network](https://www.thethingsnetwork.org/) and [Weather Underground](https://www.wunderground.com/weather/api)
 
 <img src="https://raw.github.com/luigi1809/connectedHives/master/img/scale.jpg" width="600">
 
