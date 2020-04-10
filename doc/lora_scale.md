@@ -11,10 +11,13 @@ Pin mapping to Arduino
 --------------------
 
 Original Arduino Pin-out :
-![](https://raw.github.com/luigi1809/connectedHives/master/img/Arduino-Uno-Pinout-1.png)
+
+<img src="https://raw.github.com/luigi1809/connectedHives/master/img/Arduino-Uno-Pinout-1.png" width="600">
+
 
 With Dragino LoRa shield, some pins are blocked by shield. Available pin are in blue color. Analogic pin can be used for digital use (if 5V is send, it means 1. 0V means 0) :
-![](https://raw.github.com/luigi1809/connectedHives/master/img/LoRa_Shield_Pin_Mapping.png)
+
+<img src="https://raw.github.com/luigi1809/connectedHives/master/img/LoRa_Shield_Pin_Mapping.png" width="600">
 
 * lux OPT3001
     * SDA <-> A4
@@ -46,4 +49,16 @@ With Dragino LoRa shield, some pins are blocked by shield. Available pin are in 
 
 Pin mapping to load-cell
 --------------------
+
+Diagram is indicative. Refer to the load-cell datasheet. Wire colors defer from constructors to another.
 <img src="https://raw.github.com/luigi1809/connectedHives/master/img/hx711.jpg">
+
+
+Power supply
+--------------------
+
+4 x AA Alkaline battery Box (4 x 1.5V = 6V)
+<img src="https://raw.github.com/luigi1809/connectedHives/master/img/4xAA_box.jpg" width="300">
+
+or 5 x AA Alkaline battery Box (5 x 1.2V = 6V)
+<img src="https://raw.github.com/luigi1809/connectedHives/master/img/5xAA_box.jpg" width="300">
