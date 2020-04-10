@@ -1,13 +1,21 @@
 # connectedHives
+Connected hive scale with our own LoRa Gateway
 
 Hardware list
 --------------------
-* Arduino Uno R3 [Spec](https://store.arduino.cc/arduino-uno-rev3)
-* Dragino LoRa Gateway LG01-P  868Mhz Europe version [Spec](https://www.dragino.com/products/lora-lorawan-gateway/item/117-lg01-p.html) [Datasheet](https://www.dragino.com/downloads/downloads/datasheet/EN/Datasheet_LG01.pdf) [Doc](https://www.dragino.com/downloads/downloads/UserManual/LG01_LoRa_Gateway_User_Manual.pdf)
-* Dragino LoRa Shield for Arduino Uno 868Mhz Europe version [Spec](https://www.dragino.com/products/lora/item/102-lora-shield.html)
 
+Gateway. The gateway is not LoRaWAN compatible. We will operate on our own LoRa protocol:
+* Dragino LoRa Gateway LG01-P  868Mhz Europe version [Spec](https://www.dragino.com/products/lora-lorawan-gateway/item/117-lg01-p.html) [Datasheet](https://www.dragino.com/downloads/downloads/datasheet/EN/Datasheet_LG01.pdf)
+
+Hive scale:
+* Arduino Uno R3 [Spec](https://store.arduino.cc/arduino-uno-rev3)
+ [Doc](https://www.dragino.com/downloads/downloads/UserManual/LG01_LoRa_Gateway_User_Manual.pdf)
+* Dragino LoRa Shield for Arduino Uno 868Mhz Europe version [Spec](https://www.dragino.com/products/lora/item/102-lora-shield.html)
 * Adafruit TPL5110 circuit breakout (for power saving)
 * DHT22 temperature and humidity sensor
+![](https://raw.github.com/luigi1809/connectedHives/master/img/dht22.jpg)
+* 200kg electronic platform scale load cell
+![](https://raw.github.com/luigi1809/connectedHives/master/img/load-weight-sensor.jpg)
 * 2 x 120pcs 10cm Male to Male + Male to Female and Female to Female Jumper Wire Dupont Cable for Arduino [Shop](https://www.aliexpress.com/item/32829927834.html?spm=a2g0s.9042311.0.0.27426c37Ii2tKg)
 (to be completed)
 
