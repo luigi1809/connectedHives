@@ -1,5 +1,5 @@
 # connectedHives
-Connected hive scale with our own LoRa Gateway with 6 months autonomy.
+Arduino connected hive scale with 6 months autonomy. Connected to a private and owned LoRa to Internet Gateway.
 
 Data are send to [The Things Network](https://www.thethingsnetwork.org/) and [Weather Underground](https://www.wunderground.com/weather/api)
 
