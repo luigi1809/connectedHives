@@ -9,7 +9,7 @@ Features - monitor :
 Data are sent to [The Things Network](https://www.thethingsnetwork.org/) and [Weather Underground](https://www.wunderground.com/weather/api)
 
 <img src="https://raw.github.com/luigi1809/connectedHives/master/img/scale.jpg" width="600">
-<img src="https://raw.github.com/luigi1809/connectedHives/master/img/hive2.jpg" width="600">
+<img src="https://raw.github.com/luigi1809/connectedHives/master/img/hive.jpg" width="300">
 
 
 Documentation
