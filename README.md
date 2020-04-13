@@ -1,11 +1,12 @@
 # connectedHives
-Arduino connected hive senvor with 6 months autonomy. Connected to a private and self-managed LoRa Gateway.
-Features :
+Arduino connected hive sensor with 6 months autonomy. Connected to a private and self-managed LoRa Gateway.
+
+Features - monitor :
 * Weight (Kg)
 * Luminosity (W/m²)
 * In-hive temperature (°C) and humidity (%) 
 
-Data are send to [The Things Network](https://www.thethingsnetwork.org/) and [Weather Underground](https://www.wunderground.com/weather/api)
+Data are sent to [The Things Network](https://www.thethingsnetwork.org/) and [Weather Underground](https://www.wunderground.com/weather/api)
 
 <img src="https://raw.github.com/luigi1809/connectedHives/master/img/scale.jpg" width="600">
 
