@@ -1,5 +1,9 @@
 # connectedHives
-Arduino connected hive scale with 6 months autonomy. Connected to a private and owned LoRa to Internet Gateway.
+Arduino connected hive senvor with 6 months autonomy. Connected to a private and self-managed LoRa Gateway.
+Features :
+* Weight (Kg)
+* Luminosity (W/m²)
+* In-hive temperature (°C) and humidity (%) 
 
 Data are send to [The Things Network](https://www.thethingsnetwork.org/) and [Weather Underground](https://www.wunderground.com/weather/api)
 
@@ -13,8 +17,8 @@ Documentation
 
 [LoRa Scale - electronic setup](https://github.com/luigi1809/connectedHives/blob/master/doc/lora_scale.md)
 
-[LoRa Scale - scale calibration and arduino sketch upload](https://github.com/luigi1809/connectedHives/blob/master/doc/lora_scale.md)
+[LoRa Scale - scale cell calibration and arduino sketch upload](https://github.com/luigi1809/connectedHives/blob/master/doc/calibration.md)
 
 [Send data to cloud](https://github.com/luigi1809/connectedHives/blob/master/doc/cloud.md)
 
-TO UPLOAD AND DOCUMENT : watchdog script for stability on Dragino LG01-P Gateway 
+[Watchdog script on Dragino LG01-P Gateway](https://github.com/luigi1809/connectedHives/blob/master/doc/watchdog.md)

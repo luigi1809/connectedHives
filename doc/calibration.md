@@ -1,4 +1,4 @@
-# Scale calibration and scale setup
+# Scale cell calibration and arduino sketch upload
 
 Put a reference load on the scale. You know its weight and you want to calibrate the LoRa to report the same value. It is recommanded to use a heavy load (e.g. 50 Kg)
 

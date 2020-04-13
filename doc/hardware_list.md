@@ -14,7 +14,7 @@ Hive scale:
 
 <img src="https://raw.github.com/luigi1809/connectedHives/master/img/shield.png" width="200">
 
-* 200kg electronic platform scale load cell
+* 200kg electronic platform scale load cell. Don't buy cheap load cells. They are not made for heavy load and accuracy will shortly decline (several Kg difference).
 
 <img src="https://raw.github.com/luigi1809/connectedHives/master/img/load-weight-sensor.jpg" width="200">
 

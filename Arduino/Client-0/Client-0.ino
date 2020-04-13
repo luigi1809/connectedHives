@@ -76,6 +76,9 @@ void setup()
     Wire.endTransmission();
     Serial.println("Data received \t\t Lux");
     pinMode(A0, OUTPUT);
+    pinMode(A3, OUTPUT);
+    digitalWrite(A3, HIGH);
+
     
     //load sensor
     scale.set_scale();
@@ -116,7 +119,6 @@ uint16_t CRC16(unsigned int *pBuffer,uint32_t length)
 
 void loop(){
     //delay(3);// delay to intialize lux sensor
-    state=1; 
     float temperature, humidity;
     dataLength = 11;
     // Use data[0], data[1],data[2] as Node ID
@@ -143,12 +145,14 @@ void loop(){
      
       case DHT_TIMEOUT_ERROR: 
         Serial.println(F("Pas de reponse de la sonde de temperature!"));
-        state=0;
+        data[3]= 0;
+        data[4]= 0;
+        data[5]= 0;
+        data[6]= 0;
         break;
      
       case DHT_CHECKSUM_ERROR: 
         Serial.println(F("Checksum error sonde de temperature !"));
-        state=0;
         break;
     }
     //scale
@@ -169,9 +173,10 @@ void loop(){
     }
     data[7]=(rawLux & 0xFF00) >>8;
     data[8]=(rawLux & 0x00FF) ;
-    if (state){
-        loraSend(data,dataLength);
-    }
+    Serial.println(F("Sending LoRa !"));
+    loraSend(data,dataLength);
+    Serial.println(F("Sent LoRa !"));
+    Serial.println(F("Switching off!"));
     digitalWrite(A0, HIGH);
     delay(100);
     digitalWrite(A0, LOW);
@@ -505,10 +510,3 @@ byte readDHTxx(byte pin, byte* dht_dat, unsigned long start_time, unsigned long 
     return DHT_SUCCESS; /* Pas d'erreur */
   }
 }
-
-
-
-
-
-
-

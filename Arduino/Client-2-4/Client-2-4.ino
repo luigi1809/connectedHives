@@ -17,7 +17,7 @@
 #include <RH_RF95.h>
 
 RH_RF95 rf95;
-unsigned int node_id[3] = {0,0,2}; //LoRa End Node ID
+unsigned int node_id[3] = {0,0,4}; //LoRa End Node ID
 float frequency = 868.1;
 unsigned int count = 1;
 
@@ -403,7 +403,3 @@ byte readDHTxx(byte pin, byte* dht_dat, unsigned long start_time, unsigned long 
     return DHT_SUCCESS; /* Pas d'erreur */
   }
 }
-
-
-
-
