@@ -22,6 +22,9 @@ Documentation
 
 [LoRa Scale - scale cell calibration and arduino sketch upload](https://github.com/luigi1809/connectedHives/blob/master/doc/calibration.md)
 
-[Send data to cloud](https://github.com/luigi1809/connectedHives/blob/master/doc/cloud.md)
-
 [Watchdog script on Dragino LG01-P Gateway](https://github.com/luigi1809/connectedHives/blob/master/doc/watchdog.md)
+
+Export and visualize data :
+
+* [Send data to cloud WeatherUnderground and Thingspeak](https://github.com/luigi1809/connectedHives/blob/master/doc/cloud.md)
+* or [Send data to your own grafana on debian 9](https://github.com/luigi1809/connectedHives/blob/master/doc/cloud.md)

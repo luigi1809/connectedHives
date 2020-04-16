@@ -51,11 +51,8 @@ do
 
 Curl requests are made to send data. Make sure the gateway has internet connectivity to do so.
 
-With a SCP/SFTP client like WinSCP, copy the file ```dragino/api``` to the dragino gateway ```/usr/sbin/api```
+With a SCP/SFTP client like WinSCP, copy the file ```dragino/thingspeak-wunderground/api``` to the dragino gateway ```/usr/sbin/api```
 
 Make sure ```/usr/sbin/api``` have the executable right. Connect with a SCP/SFTP client like Putty
 
 ```chmod u+x /usr/sbin/api```
-
-
-

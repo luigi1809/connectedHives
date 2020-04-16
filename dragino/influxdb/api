@@ -1,0 +1,130 @@
+#!/bin/ash
+
+INFLUXDB_LOGIN=iot
+INFLUXDB_PASS=PASS???
+URL_BASE=http://hostname/
+INFLUXDB_DB=sensor_data
+
+echo >/tmp/api
+
+echo $@ >>/tmp/api
+
+RETURN=0;
+if [ "$1" == "" ]
+then
+    echo "-2"
+    exit 2
+fi
+
+#decode data
+args=""
+
+j=0
+for i in "$@"
+do
+    case $j in
+    0)
+        nodeid=$i
+        ;;
+    1)
+        celsius=$i
+        ;;
+    2)
+        celsius=$celsius.$i
+        fahrenheit=`awk "BEGIN {print $celsius*9/5+32}"`
+        args="temperature=$celsius"
+        ;;
+    3)
+        humidity=$i
+        ;;
+    4)
+        humidity=$humidity.$i
+        args=$args",humidity=$humidity"
+        ;;
+    5)
+        case $nodeid in
+        0)
+            #ruche gauche - lux
+            luxbit=`echo $i | awk '{r="";a=$1;while(a){r=a%2r;a=int(a/2)}printf"%08d\n",r,$1}'`
+            ;;
+        1)
+            #ruche droite - barometer
+            let barometer=$i+926 #hPa correction delta 6 hPa
+            #waterInches=`awk "BEGIN {print $barometer*0.029529983071445}" | sed -e 's/ //g'`            args=$args",barometer=$barometer"
+            ;;
+        *)
+            ;;
+        esac
+        ;;
+    6)
+        case $nodeid in
+        0)
+            #ruche gauche - lux
+            luxbit=0b$luxbit`echo $i | awk '{r="";a=$1;while(a){r=a%2r;a=int(a/2)}printf"%08d\n",r,$1}'`
+            luxExponent=`python -c "print(($luxbit&0xF000)>>12)"`
+            luxMantissa=`python -c "print($luxbit&0x0FFF)"`
+            echo luxbit $luxbit
+            lux=`awk "BEGIN {print $luxMantissa * (0.01 * 2^$luxExponent)}"`
+            lumwm2=`awk "BEGIN {print $luxMantissa * (0.01 * 2^$luxExponent)*0.0079}"`
+            args=$args",lux=$lumwm2"
+            ;;
+        1)                                                                                     
+            #ruche droite - barometer decimal
+            barometer=$barometer.$i
+            waterInches=`awk "BEGIN {print $barometer*0.029529983071445}" | sed -e 's/ //g'`
+            args=$args",barometer=$barometer"
+            ;;
+        *)
+            ;;
+        esac
+        ;;
+    7)
+        case $nodeid in
+        0)
+            #ruche gauche - poids
+            poids=$i
+            ;;
+        *)
+            ;;
+        esac
+        ;;
+    8)
+        case $nodeid in
+        0)
+            #ruche gauche - poids
+            poids=$poids.$i
+            args=$args",weight=$poids"
+            ;;
+        *)
+            ;;
+        esac
+        ;;
+    esac
+    let j=$j+1
+done
+
+echo nodeid $nodeid >>/tmp/api
+echo celsius $celsius >>/tmp/api
+echo humidity $humidity >>/tmp/api
+echo barometer $barometer >>/tmp/api
+echo Pressure water inches $waterInches >>/tmp/api
+echo lux $lux >>/tmp/api
+echo Lum W\/m2 $lumwm2 >>/tmp/api
+echo Poids Kg $poids >>/tmp/api
+
+
+#Send data to influxDB
+
+measurement=node$nodeid
+timestamp=$(date '+%s')000000000
+
+date >>/tmp/api
+echo curl -i -XPOST "$URL_BASE/write?db=$INFLUXDB_DB" -u $INFLUXDB_LOGIN:$INFLUXDB_PASS --data-binary "$measurement $args $timestamp" >>/tmp/api
+curl -i -XPOST "$URL_BASE/write?db=$INFLUXDB_DB" -u $INFLUXDB_LOGIN:$INFLUXDB_PASS --data-binary "$measurement $args $timestamp" >> /tmp/api
+if [ $? -ne 0 ]
+then
+    echo "-1"
+    RETURN=1;
+fi
+
+exit $RETURN
