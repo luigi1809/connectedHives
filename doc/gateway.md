@@ -41,3 +41,7 @@ Check http://10.130.1.1/cgi-bin/luci//admin/sensor/mcu -> MCU version should be 
 ![](https://raw.github.com/luigi1809/connectedHives/master/img/mcu-version.png)
 
 Setup internet connection for the gateway. Go to Network --> Internet Access
+
+Setup your timezone System --> System:
+
+![](https://raw.github.com/luigi1809/connectedHives/master/img/timezone.png)
