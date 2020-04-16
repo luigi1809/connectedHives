@@ -28,4 +28,4 @@ Documentation
 Export and visualize data :
 
 * [Send data to cloud WeatherUnderground and Thingspeak](https://github.com/luigi1809/connectedHives/blob/master/doc/cloud.md)
-* or [Send data to your own grafana on debian 9](https://github.com/luigi1809/connectedHives/blob/master/doc/cloud.md)
+* or [Send data to your own grafana on debian 9](https://github.com/luigi1809/connectedHives/blob/master/doc/grafana.md)
