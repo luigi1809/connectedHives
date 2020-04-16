@@ -177,10 +177,11 @@ void loop(){
     loraSend(data,dataLength);
     Serial.println(F("Sent LoRa !"));
     Serial.println(F("Switching off!"));
+    // signal TPL5110 to switch off arduino
     digitalWrite(A0, HIGH);
     delay(100);
     digitalWrite(A0, LOW);
-    delay(900000); // Send sensor data every 15 minutes
+    delay(900000); // Send sensor data every 15 minutes if module not switched off by TPL5110
 }
 
 float getLux() 

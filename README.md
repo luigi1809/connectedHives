@@ -1,5 +1,5 @@
 # connectedHives
-Arduino connected hive sensor with 6 months autonomy. Connected to a private and self-managed LoRa Gateway.
+Arduino connected hive sensor with more than one year autonomy. Connected to a private and self-managed LoRa Gateway.
 
 Features - monitor :
 * Weight (Kg)
@@ -22,6 +22,8 @@ Documentation
 [LoRa Scale - scale cell calibration and arduino sketch upload](https://github.com/luigi1809/connectedHives/blob/master/doc/calibration.md)
 
 [Watchdog script on Dragino LG01-P Gateway](https://github.com/luigi1809/connectedHives/blob/master/doc/watchdog.md)
+
+[LoRa radio connectivity](https://github.com/luigi1809/connectedHives/blob/master/doc/lora.md)
 
 Export and visualize data :
 

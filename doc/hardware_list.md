@@ -42,7 +42,7 @@ Hive scale:
 
 <img src="https://raw.github.com/luigi1809/connectedHives/master/img/usb.jpg" width="100">
 
-* 4 x AA Alkaline battery Box (4 x 1.5V = 6V) or 5 x AA ni-mh/li-ion rechargeable battery Box (5 x 1.2V = 6V). More than 6 months autonomy with Alkaline.
+* 4 x AA Alkaline battery Box (4 x 1.5V = 6V) or 5 x AA ni-mh/li-ion rechargeable battery Box (5 x 1.2V = 6V). More than one year autonomy with standard battery quality.
 
 <img src="https://raw.github.com/luigi1809/connectedHives/master/img/4xAA_box.jpg" width="200"><img src="https://raw.github.com/luigi1809/connectedHives/master/img/5xAA_box.jpg" width="200">
 
