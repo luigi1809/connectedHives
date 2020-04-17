@@ -241,6 +241,7 @@ int loraSend(unsigned int *data,int dataLength){
     rf95.send(sendBuf, dataLength+2);//Send LoRa Data
     
     if (DEBUG_LED_ENABLE == 0){
+      rf95.isChannelActive(); // wait for the message to be sent
       return 0;
     }
      
