@@ -18,8 +18,10 @@
 #include <BME280I2C.h>
 #include <Wire.h>
 
+# define DEBUG_LED_ENABLE 1
+
 RH_RF95 rf95;
-unsigned int node_id[3] = {0,0,1}; //LoRa End Node ID
+unsigned int node_id[3] = {0,0,3}; //LoRa End Node ID
 float frequency = 868.1;
 unsigned int count = 1;
 
@@ -46,7 +48,7 @@ void setup()
     // Setup ISM frequency
     rf95.setFrequency(frequency);
     // Setup Power,dBm
-    rf95.setTxPower(13);
+    rf95.setTxPower(15);
     
     Serial.println("LoRa End Node"); 
     Serial.println("    DHT22 Temperature, barometer and Humidity Sensor\n");
@@ -237,6 +239,10 @@ int loraSend(unsigned int *data,int dataLength){
     Serial.println();
 
     rf95.send(sendBuf, dataLength+2);//Send LoRa Data
+    
+    if (DEBUG_LED_ENABLE == 0){
+      return 0;
+    }
      
     uint8_t buf[RH_RF95_MAX_MESSAGE_LEN];//Reply data array
     uint8_t len = sizeof(buf);//reply data length

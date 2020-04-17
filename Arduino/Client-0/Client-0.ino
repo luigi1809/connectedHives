@@ -24,6 +24,8 @@
 #define DOUT 4
 #define CLK  3
 
+# define DEBUG_LED_ENABLE 1
+
 HX711 scale(DOUT, CLK);
 float calibration_factor = -44790;
 
@@ -280,7 +282,11 @@ int loraSend(unsigned int *data,int dataLength){
     Serial.println();
 
     rf95.send(sendBuf, dataLength+2);//Send LoRa Data
-     
+    
+    if (DEBUG_LED_ENABLE == 0){
+      return 0;
+    }
+    
     uint8_t buf[RH_RF95_MAX_MESSAGE_LEN];//Reply data array
     uint8_t len = sizeof(buf);//reply data length
 
