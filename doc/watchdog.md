@@ -28,3 +28,9 @@ Generate sketch binary (or use already compiled binary in ```Arduino/gateway/ske
 <img src="https://raw.github.com/luigi1809/connectedHives/master/img/sketch_hex.png" width="200">
 
 File ```Gateway.ino.with_bootloader.standard.hex``` will be generated in same folder as ```Gateway.ino```. Rename it to ```sketch.hex``` and copy it with SCP/SFTP to dragino gateway ```/root```
+
+Patch ```/usr/bin/run-avrdude```
+```
+cp -p /usr/bin/run-avrdude /root/run-avrdude.backup
+sed -e 's|avrdude -c|avrdude -s -c|g' -i /usr/bin/run-avrdude
+```

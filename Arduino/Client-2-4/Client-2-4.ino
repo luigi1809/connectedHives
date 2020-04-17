@@ -107,7 +107,7 @@ void loop(){
         Serial.print(F("Temperature (°C): "));
         Serial.println(temperature, 2);
         data[3] = temperature;//Get Temperature Integer Part
-        data[4] = (temperature-(unsigned int)temperature)*100;//Get Temperature Decimal Part
+        data[4] = abs((temperature-(int)temperature)*100);//Get Temperature Decimal Part
         data[5] = humidity;//Get humidity Integer Part
         data[6] = (humidity-(unsigned int)humidity)*100;//Get humidity Decimal Part
         break;

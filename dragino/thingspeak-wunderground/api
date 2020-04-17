@@ -65,17 +65,24 @@ do
         esac
         ;;
     1)
-        celsius=$i
+        if [ $i > 127 ]
+        then
+            # unsigned int to int
+            let celsius=256-$i
+            celsius=-$celsius
+        else
+            celsius=$i
+        fi
         ;;
     2)
-        celsius=$celsius.$i
+        celsius=$celsius.$(printf "%02d" $i)
         fahrenheit=`awk "BEGIN {print $celsius*9/5+32}"`
         ;;
     3)
         humidity=$i
         ;;
     4)
-        humidity=$humidity.$i
+        humidity=$humidity.$(printf "%02d" $i)
         ;;
     5)
         case $nodeid in
@@ -105,7 +112,7 @@ do
             ;;
         1)                                                                                     
             #ruche droite - barometer decimal
-            barometer=$barometer.$i
+            barometer=$barometer.$(printf "%02d" $i)
             waterInches=`awk "BEGIN {print $barometer*0.029529983071445}" | sed -e 's/ //g'`   
             ;;
         *)
@@ -126,7 +133,7 @@ do
         case $nodeid in
         0)
             #ruche gauche - poids
-            poids=$poids.$i
+            poids=$poids.$(printf "%02d" $i)
             ;;
         *)
             ;;
