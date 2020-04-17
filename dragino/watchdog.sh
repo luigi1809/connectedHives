@@ -13,7 +13,7 @@ then
 	grep "^LoraFwd" /var/avr/fw_version
 	if [ $? -ne 0 ]
 	then
-		/usr/bin/run-avrdude /root/sketch.hex >/tmp/update_mcu.log 2>&1
+		/usr/bin/run-avrdude /root/sketch.hex -q -q >/tmp/update_mcu.log 2>&1
 		sleep 30
     fi
 	

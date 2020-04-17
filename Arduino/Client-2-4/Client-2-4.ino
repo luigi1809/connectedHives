@@ -19,7 +19,7 @@
 # define DEBUG_LED_ENABLE 0
 
 RH_RF95 rf95;
-unsigned int node_id[3] = {0,0,4}; //LoRa End Node ID
+unsigned int node_id[3] = {0,0,3}; //LoRa End Node ID
 float frequency = 868.1;
 unsigned int count = 1;
 
@@ -174,8 +174,11 @@ int loraSend(unsigned int *data,int dataLength){
     Serial.println();
 
     rf95.send(sendBuf, dataLength+2);//Send LoRa Data
-    
+
     if (DEBUG_LED_ENABLE == 0){
+      Serial.println("Wait");
+      rf95.isChannelActive(); // wait for the message to be sent
+      Serial.println("OK");
       return 0;
     }
     
