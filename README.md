@@ -9,9 +9,11 @@ Features - monitor :
 Data are sent to cloud [The Things Network](https://www.thethingsnetwork.org/) and [Weather Underground](https://www.wunderground.com/weather/api) or your own grafana instance.
 
 Output with grafana :
+
 <img src="https://raw.github.com/luigi1809/connectedHives/master/img/capture_grafana.jpg" width="600">
 
 <img src="https://raw.github.com/luigi1809/connectedHives/master/img/scale.jpg" width="600">
+
 <img src="https://raw.github.com/luigi1809/connectedHives/master/img/hive.jpg" width="300">
 
 Documentation
