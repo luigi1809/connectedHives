@@ -27,7 +27,7 @@ do
         nodeid=$i
         ;;
     1)
-        if [ $i > 127 ]
+        if [ $i -gt 127 ]
         then
             # unsigned int to int
             let celsius=256-$i
