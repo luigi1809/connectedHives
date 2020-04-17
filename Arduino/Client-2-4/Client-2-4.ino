@@ -16,10 +16,10 @@
 #include <SPI.h>
 #include <RH_RF95.h>
 
-# define DEBUG_LED_ENABLE 1
+# define DEBUG_LED_ENABLE 0
 
 RH_RF95 rf95;
-unsigned int node_id[3] = {0,0,1}; //LoRa End Node ID
+unsigned int node_id[3] = {0,0,4}; //LoRa End Node ID
 float frequency = 868.1;
 unsigned int count = 1;
 

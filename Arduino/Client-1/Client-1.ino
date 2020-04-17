@@ -18,7 +18,7 @@
 #include <BME280I2C.h>
 #include <Wire.h>
 
-# define DEBUG_LED_ENABLE 1
+# define DEBUG_LED_ENABLE 0
 
 RH_RF95 rf95;
 unsigned int node_id[3] = {0,0,3}; //LoRa End Node ID
